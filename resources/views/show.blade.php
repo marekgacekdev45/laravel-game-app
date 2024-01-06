@@ -2,12 +2,12 @@
 
 @section('content')
     <div class="container mx-auto px-4">
-        <div class="game-details border-b border-gray-800 pb-12 flex">
+        <div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
             <div class="flex-none">
                 <img src="{{ asset('luigi.jpg') }}" alt="game cover">
             </div>
-            <div class="ml-12 mr-64">
-                <h2 class="font-semibold text-4xl">Luigi's Mansion 3</h2>
+            <div class="lg:ml-12 lg:mr-64">
+                <h2 class="font-semibold text-4xl leading-tight mt-1 ">Luigi's Mansion 3</h2>
                 <div class="text-gray-400">
                     <span>Adventure, Platform</span>
                     &middot;
@@ -28,7 +28,7 @@
                         </div>
                         <div class="ml-4 text-sm">Critic <br>Score</div>
                     </div>
-                    <div class="flex items-center ml-12 space-x-4">
+                    <div class="flex items-center space-x-4 mt-4 lg:mt-0 lg:ml-12">
                         <div class=" w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center"><a href="#"
                                 class="hover:text-gray-400"><svg class="fill-white w-5 h-5"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -61,7 +61,7 @@
 
         <div class="images-container border-b border-gray-800 pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
-            <div class="grid grid-cols-3 gap-12 mt-12">
+            <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-12 mt-12">
                 <div><a href="#">
                         <img src="{{ asset('screenshot1.jpg') }}" alt="screenshot"
                             class="hover:opacity-75 tranisiton ease-in-out duration-150"></a></div>
@@ -146,9 +146,9 @@
                         Fantasy 7 Remake</a>
                     <div class="text-gray-400 mt-1">PlayStation 4</div>
                 </div>
-           
-              
-    
+
+
+
             </div> <!--end popular games-->
         </div> {{-- end similar games --}}
     </div>
