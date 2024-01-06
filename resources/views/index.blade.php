@@ -4,7 +4,7 @@
     <div class="container mx-auto px-4">
         <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Popular Games</h2>
 
-        <div class="popular-games text-sm grid grid-cols-6 gap-12 border-b border-gray-800 pb-16">
+        <div class="popular-games text-sm grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
             <div class="game mt-8">
                 <div class="relative inline-block">
                     <a href="#"><img src="{{ asset('/ff7.jpg') }}" alt="game cover"
@@ -151,8 +151,8 @@
             </div>
 
         </div> <!--end popular games-->
-        <div class="flex my-10">
-            <div class="recently-reviewed w-3/4 mr-32">
+        <div class="flex flex-col lg:flex-row my-10">
+            <div class="recently-reviewed w-full lg:w-3/4 lg:mr-32">
                 <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Recently viewed</h2>
                 <div class="recently-reviewed-container space-y-12 mt-8 ">
 
@@ -168,7 +168,7 @@
                                 class="block text-large font-semibold leading-tight hover:text-gray-400 mt-4"> Final
                                 Fantasy 7 Remake</a>
                             <div class="text-gray-400 mt-1">PlayStation 4</div>
-                            <p class="mt-6 text-gray-400">
+                            <p class="mt-6 text-gray-400 hidden lg:block">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae perferendis, repellendus
                                 architecto quasi reprehenderit voluptatibus magni laborum excepturi quam. Aut, blanditiis
                                 aspernatur eum inventore, cupiditate quos repudiandae mollitia ducimus, vitae rem soluta
@@ -188,7 +188,7 @@
                                 class="block text-large font-semibold leading-tight hover:text-gray-400 mt-4"> Final
                                 Fantasy 7 Remake</a>
                             <div class="text-gray-400 mt-1">PlayStation 4</div>
-                            <p class="mt-6 text-gray-400">
+                            <p class="mt-6 text-gray-400 hidden lg:block">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae perferendis, repellendus
                                 architecto quasi reprehenderit voluptatibus magni laborum excepturi quam. Aut, blanditiis
                                 aspernatur eum inventore, cupiditate quos repudiandae mollitia ducimus, vitae rem soluta
@@ -208,7 +208,7 @@
                                 class="block text-large font-semibold leading-tight hover:text-gray-400 mt-4"> Final
                                 Fantasy 7 Remake</a>
                             <div class="text-gray-400 mt-1">PlayStation 4</div>
-                            <p class="mt-6 text-gray-400">
+                            <p class="mt-6 text-gray-400 hidden lg:block">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae perferendis, repellendus
                                 architecto quasi reprehenderit voluptatibus magni laborum excepturi quam. Aut, blanditiis
                                 aspernatur eum inventore, cupiditate quos repudiandae mollitia ducimus, vitae rem soluta
@@ -220,8 +220,38 @@
                 </div>
 
             </div>
-            <div class="most-anticipated w-1/4 ">
+            <div class="most-anticipated w-full lg:w-1/4 mt-12 lg:mt-0">
                 <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Recently viewed</h2>
+                <div class="most-anticipated-container space-y-10 mt-8">
+                    <div class="game flex">
+                        <a href="#"><img src="{{ asset('/cyberpunk.jpg') }}" alt="game cover"
+                            class=" w-16 hover:opacity-75 transition ease-in-out duration-150"></a>
+                            <div class="ml-4">
+                                <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
+                                <div class="text-gray-400 text-sm mt-1">Sept.16 2020</div>
+                            </div>
+                    </div>
+                    <div class="game flex">
+                        <a href="#"><img src="{{ asset('/cyberpunk.jpg') }}" alt="game cover"
+                            class=" w-16 hover:opacity-75 transition ease-in-out duration-150"></a>
+                            <div class="ml-4">
+                                <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
+                                <div class="text-gray-400 text-sm mt-1">Sept.16 2020</div>
+                            </div>
+                    </div>
+                    <div class="game flex">
+                        <a href="#"><img src="{{ asset('/cyberpunk.jpg') }}" alt="game cover"
+                            class=" w-16 hover:opacity-75 transition ease-in-out duration-150"></a>
+                            <div class="ml-4">
+                                <a href="#" class="hover:text-gray-300">Cyberpunk 2077</a>
+                                <div class="text-gray-400 text-sm mt-1">Sept.16 2020</div>
+                            </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="most-anticipated w-full lg:w-1/4 mt-12 lg:mt-0">
+                <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Coming Soon</h2>
                 <div class="most-anticipated-container space-y-10 mt-8">
                     <div class="game flex">
                         <a href="#"><img src="{{ asset('/cyberpunk.jpg') }}" alt="game cover"
