@@ -153,3 +153,14 @@
         </div> {{-- end similar games --}}
     </div>
 @endsection
+
+
+php
+<?php foreach ($elements as $el): ?>
+<li><?php echo $el; ?></li>
+<?php endforeach; ?>
+
+blade
+@foreach($elements as $el)
+   {{$el}}
+@endforeach
