@@ -52,7 +52,7 @@ public function loadPopularGames(){
     $before = Carbon::now()->subMonths(12)->timestamp;
     $after = Carbon::now()->addMonths(12)->timestamp;
 
-    $this->popularGames = Cache::remember('popular-games', 7, function () use ($before, $after) {
+    $this->popularGames = Cache::rememberForever('popular-games', function () use ($before, $after) {
         
         return Http::withHeaders(config('services.igdb'))
             ->withBody(
