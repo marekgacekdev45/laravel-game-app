@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GameApp</title>
     @vite('resources/css/app.css')
+    @livewireStyles
 </head>
 
 <body class="bg-gray-900 text-white ">
@@ -49,6 +50,8 @@
             Powered by <a href="#" class="underline hover:text-gray-400"> IGDB API</a>
         </div>
     </footer>
+    @livewireScripts
+
 </body>
 
 </html>
